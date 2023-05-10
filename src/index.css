@@ -1,0 +1,56 @@
+* {
+    font-family: 'Barlow', sans-serif;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: var(--light);
+}
+
+input {
+    cursor: pointer;
+}
+
+button {
+    cursor: pointer;
+    border-radius: 0.9rem;
+    border: var(--btnborder);
+    box-shadow: var(--btnboxshadow);
+}
+
+select {
+    color: var(--dark);
+}
+
+:root {
+    --light: #f5f5f5;
+    --dark: #27272a;
+    --accent: #71717a;
+    --green: #22c55e;
+    --red: #dc2626;
+    --blue: #dbeafe;
+    --accentblue: #bfdbfe;
+    --darkblue: #60a5fa;
+    --border: 3px solid var(--dark);
+    --boxshadow: 5px 10px 0px var(--dark);
+    --btnborder: 2px solid var(--dark);
+    --btnboxshadow: 5px 5px 0px var(--dark);
+    --hoverboxshadow: 5px 5px 0px var(--accent);
+    --hoverborder: 2px solid var(--accent);
+}
+
+a {
+    color: var(--dark);
+}
+
+a:hover {
+    color: var(--accent);
+}

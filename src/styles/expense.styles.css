@@ -1,0 +1,154 @@
+.expense-tracker-container {
+    min-height: 100vh;
+    min-height: 100svh;
+    min-height: 100dvh;
+}
+
+.expense-header-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.expense-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 0.8rem;   
+}
+
+.expense-list {
+    display: grid;
+    gap: 5rem;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem;
+    margin: 1rem;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.expense {
+    border-bottom: 1px solid var(--accent);
+    padding: 6px;
+}
+
+.expense-item-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+}
+
+.expense-name {
+    text-transform: capitalize;
+    font-weight: 600;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.expense-item {
+    text-transform: capitalize;
+}
+
+.expense-delete-btn {
+    text-align: center;
+    padding: 0.5rem;
+    margin: 5px;
+    gap: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: .9rem;
+    border: var(--btnborder);
+    color: var(--dark);
+    background-color: var(--accentblue);
+    box-shadow: var(--btnboxshadow);
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.expense-delete-btn:hover {
+    color: var(--accent);
+    border: var(--hoverborder);
+    box-shadow: var(--hoverboxshadow);
+    background-color: var(--blue);
+}
+
+.expense-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 1080px;
+    gap: 1rem;
+    padding: 1rem;
+    margin-top: 5rem;
+    border-radius: 0.9rem;
+    border: var(--border);
+    box-shadow: var(--boxshadow);
+}
+
+.expense-btn-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.create-expense-btn {
+    border-radius: 0.9rem;
+    border: var(--btnborder);
+    padding: .8rem;
+    background-color: var(--accentblue);
+    font-size: 1.2rem;
+    color: var(--dark);
+    font-weight: 500;
+    width: 10%;
+    margin-top: 10rem;
+    display: flex;
+    justify-content: center;
+    box-shadow: var(--btnboxshadow);
+}
+
+.create-expense-btn:hover {
+    color: var(--accent);
+    box-shadow: var(--hoverboxshadow);
+    border: var(--hoverborder);
+    background-color: var(--blue);
+}
+
+.create-expense-btn-nonactive {
+    border-radius: 0.5rem;
+    border: none;
+    padding: .8rem;
+    background-color: var(--dark);
+    font-size: 1.2rem;
+    color: var(--light);
+    font-weight: 500;
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 2px 8px 2px var(--accent);
+}
+
+.no-expense-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20rem;
+}
+
+.no-expense-info {
+    font-family: 'Inconsolata', monospace;
+    font-size: 2.5rem;
+}
+
+.create-expense-btn-nonactive:hover {
+    color: var(--accent);
+}
+
+.expense-header {
+    font-size: 3.8rem;
+    font-family: 'Inconsolata', monospace;
+    padding-top: 1rem;
+    border-bottom: .5rem solid var(--dark);
+}

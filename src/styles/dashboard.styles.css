@@ -1,0 +1,111 @@
+.dashboard-container {
+    min-height: 100vh;
+    min-height: 100svh;
+    min-height: 100dvh;
+}
+
+.dashboard-containers {
+  display: grid;
+  margin-top: 1rem;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-rows: auto 1fr;
+  place-items: center;
+  gap: .4rem;
+  text-align: center;
+}
+
+.category-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 1rem;
+}
+
+.welcome-msg {
+    font-size: 1.5rem;
+    font-family: 'Inconsolata', monospace;
+    padding: 10px;
+}
+
+.welcome-name {
+  font-family: 'Inconsolata', monospace;
+}
+
+.welcome-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.category-expenses {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    margin-top: 40px;
+    padding: 20px;
+    border-radius: 0.9rem;
+    background-color: var(--light);
+    border: var(--border);
+    box-shadow: var(--boxshadow);
+    max-width: 600px;
+    text-align: center;
+  }
+  
+  .cat-exp-title {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    border-bottom: 1px solid var(--accent);
+    padding: 6px;
+  }
+
+  .cat-exp-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    margin-top: 1rem;
+    gap: 1rem;
+  }
+  
+  .cat-exp-info {
+    font-size: 1.2rem;
+    margin: 5px 0;
+    text-transform: capitalize;
+  }
+
+  .top-expenses-btn {
+    text-align: center;
+    padding: 0.5rem;
+    margin: 5px;
+    border-radius: .9rem;
+    border: var(--btnborder);
+    color: var(--dark);
+    background-color: var(--accentblue);
+    box-shadow: var(--btnboxshadow);
+    font-size: .9rem;
+    font-weight: 500;
+  }
+
+  .top-expenses-btn:hover {
+    color: var(--accent);
+    border: var(--hoverborder);
+    box-shadow: var(--hoverboxshadow);
+    background-color: var(--blue);
+  }
+
+  .top-expenses-btn-active {
+    color: var(--light);
+    background-color: var(--dark);
+    border: 2px solid var(--light);
+    box-shadow: 0 5px 0px var(--light);
+  }
+
+  .top-expenses-btn-active:hover {
+      color: var(--light);
+      background-color: var(--accent);
+      border: 2px solid var(--light);
+      box-shadow: 0 5px 0px var(--light);
+  }

@@ -1,0 +1,138 @@
+.expense-form-container {
+    min-height: 100vh;
+    min-height: 100svh;
+    min-height: 100dvh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    margin: auto;
+}
+
+.expense-inputs {
+    display: flex;
+    align-items: center;
+}
+
+.expense-form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.2rem;
+    padding: 1.2rem;
+    color: var(--dark);
+    border-radius: .9rem;
+    width: 450px;
+    border: var(--border);
+    box-shadow: var(--boxshadow);
+}
+
+.expense-form-header {
+    padding: 1.3rem;
+    font-size: 2.4rem;
+    background-color: var(--accentblue);
+    width: 100%;
+    border-radius: 1rem;
+    text-align: center;
+    font-family: 'Inconsolata', monospace;
+}
+
+.expense-label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--dark);
+    font-weight: 500;
+    gap: .4rem;
+    margin: .2rem;
+}
+
+.expense-input {
+    border-radius: .9rem;
+    height: 35px;
+    width: 100%;
+    border: var(--btnborder);
+    box-shadow: var(--btnboxshadow);
+    font-size: 1rem;
+    outline: none;
+    padding: .3rem;
+    background-color: var(--light);
+}
+
+.expense-input:hover {
+    color: var(--accent);
+    border: var(--hoverborder);
+    box-shadow: var(--hoverboxshadow);
+}
+
+.expense-success {
+    background-color: var(--green);
+    border: var(--btnborder);
+    box-shadow: var(--btnboxshadow);
+    padding: 1rem;
+    border-radius: .9rem;
+    margin-top: 1rem;
+}  
+
+.expense-failure {
+    background-color: var(--red);
+    border: var(--btnborder);
+    box-shadow: var(--btnboxshadow);
+    padding: 1rem;
+    border-radius: .9rem;
+    margin-top: 1rem;
+}
+
+.expense-success-msg {
+    color: var(--light);
+}
+
+.expense-failure-msg {
+    color: var(--light);
+}
+
+.expense-form input::placeholder {
+    color: var(--dark);
+    font-style: italic;
+}
+
+.expense-form input:focus {
+    box-shadow: var(--hoverboxshadow);
+    border: var(--hoverborder);
+}
+
+
+.expense-btn {
+    border-radius: 0.9rem;
+    border: var(--btnborder);
+    box-shadow: var(--btnboxshadow);
+    padding: .8rem;
+    background-color: var(--accentblue);
+    font-size: 1.2rem;
+    color: var(--dark);
+    font-weight: 500;
+    cursor: pointer;
+    width: 100%;
+}
+
+.expense-btn:hover {
+    color: var(--accent);
+    border: var(--hoverborder);
+    box-shadow: var(--hoverboxshadow);
+    background-color: var(--blue);
+}
+
+.expense-error {
+    color: var(--light);
+    font-size: 1.2rem;
+    font-weight: normal;
+}
+
+.expense-success {
+    color: var(--green);
+    font-size: 1.2rem;
+    font-weight: normal;
+}

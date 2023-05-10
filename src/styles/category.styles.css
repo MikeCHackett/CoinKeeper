@@ -1,0 +1,60 @@
+.category-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    text-align: center;
+    background-color: var(--light);
+    border-radius: 0.9rem;
+}
+
+.cat-title {
+    font-family: 'Inconsolata', monospace;
+    font-size: 2.2rem;
+}
+
+.cat-info {
+    font-size: 1.3rem;
+}
+
+.category-buttons-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 5rem;
+}
+
+.cat-btn {
+    text-align: center;
+    padding: 0.5rem;
+    margin: 5px;
+    border-radius: .8rem;
+    border: var(--btnborder);
+    color: var(--dark);
+    background-color: var(--accentblue);
+    box-shadow: var(--btnboxshadow);
+    font-size: .9rem;
+    font-weight: 500;
+}
+
+.cat-btn:hover {
+    color: var(--accent);
+    border: var(--hoverborder);
+    box-shadow: var(--hoverboxshadow);
+}
+
+.cat-btn-active {
+    color: var(--light);
+    background-color: var(--dark);
+    border: 2px solid var(--light);
+    box-shadow: 0 5px 0px var(--light);
+}
+
+.cat-btn-active:hover {
+    color: var(--light);
+    background-color: var(--dark);
+    border: 2px solid var(--light);
+    box-shadow: 0 5px 0px var(--light);
+}

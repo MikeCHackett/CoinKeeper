@@ -1,0 +1,90 @@
+.nav-container {
+    display: flex;
+    gap: 1rem;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 1.2rem 1.5rem;
+    background: var(--light);
+}
+
+
+.logo-wrapper {
+    display: flex;
+    gap: .3rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    font-family: 'Inconsolata', monospace;
+    color: var(--dark);
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.logo:hover {
+    color: var(--accent);
+}
+
+.logo-img {
+    width: 40px;
+    height: 40px;
+    margin: 0.5rem;
+}
+
+.logo-img:hover {
+    position: relative;
+    animation: spin 4s linear infinite;
+}
+
+@keyframes spin{
+    0%{
+        transform: rotateY(0deg);
+    }
+    100%{
+        transform: rotateY(360deg);
+    }
+}
+
+
+.nav-links-unauth {
+    font-size: 1.3rem;
+    display: flex;
+    gap: 1rem;
+    font-weight: 500;
+    font-family: 'Inconsolata', monospace;
+}
+
+.nav-links:hover {
+    color: var(--accent);
+}
+
+.nav-links-auth {
+    font-size: 1.3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.5rem;
+    padding: .3rem;
+    font-weight: 500;
+    font-family: 'Inconsolata', monospace;
+}
+
+.logout-btn {
+    border-radius: 0.9rem;
+    border: var(--btnborder);
+    padding: .4rem;
+    background-color: var(--accentblue);
+    font-size: 1.2rem;
+    color: var(--dark);
+    font-weight: 500;
+    width: 100%;
+}
+
+.logout-btn:hover {
+    color: var(--accent);
+    background-color: var(--blue);
+    border: var(--hoverborder);
+    box-shadow: var(--hoverboxshadow);
+}
