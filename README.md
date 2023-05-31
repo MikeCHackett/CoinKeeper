@@ -76,5 +76,5 @@ Thank you for viewing my repository!
 ---
 
 <p align="center">
-  <img src="../budget-buddy/src/assets/coin.svg" alt="Project Logo">
+  <img src="coin.svg" alt="Project Logo">
 </p>
