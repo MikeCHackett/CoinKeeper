@@ -24,7 +24,7 @@ export const CategoryExpenses = () => {
     <>
             <Category onSelect={handleCategoryChange} />
                     <div className='category-expenses'>
-                        <h2 className='cat-exp-title'>Category related expenses:</h2>
+                        <h2 title="category related expenses" className='cat-exp-title'>Category related expenses:</h2>
                             {filteredExpenses.length > 0 ? (
                                 filteredExpenses.map((expense) => (
                                     <div className='cat-exp-container' key={expense.id}>

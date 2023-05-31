@@ -44,7 +44,7 @@ export const Top5Expenses = () => {
   }, [showHighestCost]);
 
   return (
-    <div className="category-expenses">
+    <div title='top 5 expenses' className="category-expenses">
       <h2 className="cat-exp-title">Top 5 expenses:</h2>
       {expenses.length > 0 && (
         <div className="top-expenses-buttons">

@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import { Loader } from '../components/Loader';
 import { useAuth } from '../context/AuthContext';
 import { ExpenseList } from '../components/ExpenseList';
+import { NoExpenses } from '../components/NoExpenses';
 
 export const ExpenseTracker = () => {
 
@@ -27,14 +28,14 @@ export const ExpenseTracker = () => {
         loading ? <Loader /> :
           <div className='expense-tracker-container'>
             <div className='expense-header-wrapper'>
-            <h2 className='expense-header'>My expenses</h2>
+            <h2 title='expenses page' className='expense-header'>My expenses</h2>
             </div>
 
 
-              {expenses && expenses.length > 0 ? <div className='expense-wrapper'> <ExpenseList /> </div> : <div className='no-expense-wrapper'> <p className='no-expense-info'>No expenses created</p> </div>}
+              {expenses && expenses.length > 0 ? <div className='expense-wrapper'> <ExpenseList /> </div> : <NoExpenses />}
 
             <div className='expense-btn-wrapper'>
-              <Link className='create-expense-btn' to='/create-expenseform'>Create an expense</Link>
+              <Link title='create an expense' className='create-expense-btn' to='/create-expenseform'>Create an expense</Link>
             </div>
           </div>
       }

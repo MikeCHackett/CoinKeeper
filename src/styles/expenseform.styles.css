@@ -13,6 +13,10 @@
 .expense-inputs {
     display: flex;
     align-items: center;
+    flex-direction: column;
+    gap: .2rem;
+    width: 80%;
+    padding: .2rem;
 }
 
 .expense-form {
@@ -35,7 +39,7 @@
     font-size: 2.4rem;
     background-color: var(--accentblue);
     width: 100%;
-    border-radius: 1rem;
+    border-radius: .9rem;
     text-align: center;
     font-family: 'Inconsolata', monospace;
 }
@@ -110,6 +114,7 @@
     border: var(--btnborder);
     box-shadow: var(--btnboxshadow);
     padding: .8rem;
+    margin-top: .8rem;
     background-color: var(--accentblue);
     font-size: 1.2rem;
     color: var(--dark);

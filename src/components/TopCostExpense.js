@@ -19,7 +19,7 @@ export const TopCostExpense = () => {
   return (
 
 
-          <div className='category-expenses'>
+          <div title='highest cost expense' className='category-expenses'>
             <h2 className='cat-exp-title'>Most expensive expense:</h2>
             {expenses.length > 0 ? (
               <div className='cat-exp-container'>

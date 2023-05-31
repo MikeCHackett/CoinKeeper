@@ -49,7 +49,7 @@ export const NextExpenseDue = () => {
   }
 
   return (
-    <div className='category-expenses'>
+    <div title="next expense due" className='category-expenses'>
       <h2 className='cat-exp-title'>Next expense due:</h2>
         {nextExpenses.length > 0 ? (
             <div className='top-expenses'>

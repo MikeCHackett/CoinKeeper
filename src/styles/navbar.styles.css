@@ -34,7 +34,6 @@
 }
 
 .logo-img:hover {
-    position: relative;
     animation: spin 4s linear infinite;
 }
 

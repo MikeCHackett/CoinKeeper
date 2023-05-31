@@ -78,10 +78,10 @@ export const ExpenseForm = () => {
           onSubmit={handleCreate}
         >
 
-          <h1 className='expense-form-header'>Create an expense</h1>
+          <h1 title='create expense page title' className='expense-form-header'>Create an expense</h1>
           
-          <div className='expense-inputs'>
-            <label htmlFor={name} className='expense-label'> Name
+          <div title='expense name' className='expense-inputs'>
+            <label htmlFor={name} className='expense-label'> Name </label>
               <input
                 type='text'
                 value={name}
@@ -90,9 +90,10 @@ export const ExpenseForm = () => {
                 placeholder='expense name'
                 required
               />
-            </label>
+            </div>
 
-            <label className='expense-label'> Cost
+          <div title='expense cost' className='expense-inputs'>
+            <label className='expense-label'> Cost </label>
               <input
                 type='number'
                 value={cost}
@@ -101,11 +102,10 @@ export const ExpenseForm = () => {
                 placeholder='cost $$$'
                 required
               />
-            </label>
           </div>
 
-          <div className='expense-inputs'>
-            <label className='expense-label'> Due date
+          <div title='expense due date selector' className='expense-inputs'>
+            <label className='expense-label'> Due date </label>
               <input
                 type='date'
                 value={dueDate}
@@ -114,9 +114,10 @@ export const ExpenseForm = () => {
                 required
                 min={new Date().toISOString().split('T')[0]}
               />
-            </label>
+          </div>
 
-            <label className='expense-label'> Category
+          <div title='expense category selector' className='expense-inputs'>
+            <label className='expense-label'> Category </label>
               <select className='expense-input' value={category} onChange={(e) => setCategory(e.target.value)}>
                 <option value="">Select</option>
                   {categoryData.map((category) => (
@@ -125,13 +126,13 @@ export const ExpenseForm = () => {
                 </option>
                 ))}
               </select>
-            </label>
           </div>
 
 
           <button
           type='submit'
           className='expense-btn'
+          title='create expense'
           >
             Add expense
           </button>

@@ -45,11 +45,10 @@ export const LandingPage = () => {
             <div className='header-left'>
               <h1 className='landing-header'>Coin Keeper<span><img className='logo-img-landing' alt='logo' src={Logo} /></span></h1>
               <p className='description'>Keep track of your expenses with ease.</p>
-              <button className='landing-btn' onClick={handleGetStarted}>Get started</button>
+              <button title='Get Started now!' className='landing-btn' onClick={handleGetStarted}>Get started</button>
             </div>
             <img className='header-right' src={LandingImage} alt='Budget Buddy' />
           </div>
-
           <div className='info-container'>
             <h3 className='key-benefits'>Key Benefits</h3>
               <Card
@@ -65,7 +64,6 @@ export const LandingPage = () => {
                 title='Real-time tracking'
                 info='With Budget-Buddy, real-time tracking features keep you updated at all times.' />
           </div>
-
         </div>
       }
     </>

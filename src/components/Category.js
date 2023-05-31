@@ -8,7 +8,7 @@ export const Category = ({ onSelect, selectedCategory }) => {
 
   return (
     <>
-        <div className='category-buttons-container'>
+        <div title="categories" className='category-buttons-container'>
           {categoryData.map(category => (
             <button
               key={category.id} 

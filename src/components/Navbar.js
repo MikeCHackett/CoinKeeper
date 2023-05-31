@@ -32,7 +32,7 @@ export const Navbar = () => {
 
   return (
     <nav className='nav-container'>
-        <Link className='logo-wrapper' to='/'>
+        <Link title='home' className='logo-wrapper' to='/'>
           <img className='logo-img' alt='logo' src={Logo} />
           <p className='logo'>Coin Keeper</p>
         </Link>
@@ -44,9 +44,9 @@ export const Navbar = () => {
 
         {currentUser ? ( 
           <div className='nav-links-auth'>
-            <Link className='nav-links' to="/dashboard">Dashboard</Link>
-            <Link className='nav-links' to="/expense-tracker">Expenses</Link>
-            <button className='logout-btn' onClick={handleLogout}>Logout</button>
+            <Link title='dashboard' className='nav-links' to="/dashboard">Dashboard</Link>
+            <Link title='expenses' className='nav-links' to="/expense-tracker">Expenses</Link>
+            <button title='logout' className='logout-btn' onClick={handleLogout}>Logout</button>
           </div>
           ) : ( 
           <div className='nav-links-unauth'>

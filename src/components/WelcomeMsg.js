@@ -7,7 +7,7 @@ export const WelcomeMsg = () => {
   const { currentUser } = useAuth();
 
   return (
-    <div className='welcome-container'>
+    <div title='welcome' className='welcome-container'>
       {currentUser ? (
         <p className='welcome-msg'>
           Welcome...{' '}
